@@ -85,8 +85,8 @@ func getStatusOfDynamoDBtable() string {
 func main() {
 	fmt.Println("web server started")
 	r := mux.NewRouter()
-	r.HandleFunc("/chansen/all/", allHandler)
-	r.HandleFunc("/chansen/status/", statusHandler)
+	r.HandleFunc("/chansen/all", allHandler)
+	r.HandleFunc("/chansen/status", statusHandler)
 	http.ListenAndServe(":8080", r)
 }
 
