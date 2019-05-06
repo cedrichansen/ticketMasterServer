@@ -10,5 +10,5 @@ pkg
 .vscode
 src/chansen-ticket_master/Dockerfile
 src/chansen-ticket_master_grabber/Dockerfile
-Dockerfile
+#Dockerfile
 
