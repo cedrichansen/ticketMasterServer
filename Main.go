@@ -63,6 +63,8 @@ func getAllEventsFromDynamoDB() string {
 //return the tableName and tablecount
 func getStatusOfDynamoDBtable() string {
 
+	//This comment is simply to test the pipeline is working correctly
+
 	sess, err := session.NewSession(&aws.Config{
 		Region: aws.String("us-east-1")},
 	)
