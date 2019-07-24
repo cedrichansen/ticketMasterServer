@@ -30,10 +30,10 @@ WORKDIR /root/
 COPY --from=build /go/src/chansen-ticket_master_grabber/main ./
 
 # Add environment variables
-ENV LOGGLY_TOKEN 638bd2ef-acdf-497c-ba6a-2612878c5b4b
-ENV TICKET_MASTER_KEY KMv583fPo0rXACykwKJDxPtEvSQWvwUQ
-ENV AWS_ACCESS_KEY_ID AKIA34XNLPJYGEDLZAXG
-ENV AWS_SECRET_ACCESS_KEY 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
+ENV LOGGLY_TOKEN <KEY>
+ENV TICKET_MASTER_KEY <KEY>
+ENV AWS_ACCESS_KEY_ID <KEY>
+ENV AWS_SECRET_ACCESS_KEY <KEY>
 
 # Check results
 RUN env && pwd && find .
